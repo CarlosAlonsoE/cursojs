@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicios de Javascript</title>
+		<noscript>
+			Este navegador no tiene activada la ejecución de Javascript y su contenido no será visualizado correctamente.
+		</noscript>
+		<script>
+			//abre ventana nueva con url y dimensiones indicadas
+			//window.open("http://www.google.es","","width=300,height=150,menubar=no");
+			
+			//abre una caja de dialogo de alerta sin botones
+			//window.alert("Mensaje de alerta");	
+			
+			//almacena en variable nombre lo escrito por el usuario con prompt
+			//var nombre = prompt("Escriba su nombre: ","");
+
+		</script>	
+
+	</head>
+	<body>
+		<h1>Página 1</h1>
+		<!-- <p>Bienvenido <script>document.write(nombre)</script></p> -->
+		<p id="elnombreDon">El nombre</p>
+		<b><script>document.write(new Date());</script></b>
+		<!-- con un click nos dirigimos a la url indicada por location.href -->
+		<input type="button" value="Ir a página 2" onclick="location.href = 'dos.html'"/>
+		<script>
+			//este script solo puede ponerse después del id donde va a ser utilizado, sino no funciona
+			//motivo la forma en que se carga la página
+			var nombreConDon = "Eres un Don?";
+			document.getElementById("elnombreDon").innerHTML = nombreConDon;		
+		</script>
+</body>
+</html>
